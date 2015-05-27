@@ -1,0 +1,12 @@
+*.log
+*.pot
+*.pyc
+.DS_Store
+cached_templates/
+django.mo
+*.tfile
+.emacs-project
+.idea/
+.#*
+__pycache__
+contactStarter/settings.py
