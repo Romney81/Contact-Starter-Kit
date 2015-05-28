@@ -8,28 +8,26 @@
 <html>
   <meta charset="UTF-8">
   <head>
-    
+
     <title>homepage</title>
-    
+
     ## add any site-wide scripts or CSS here; for example, jquery:
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  
+    <script src="${STATIC_URL}homepage/media/jquery.growl/javascripts/jquery.growl.js" type="text/javascript"></script>
+            <link href="${STATIC_URL}homepage/media/jquery.growl/stylesheets/jquery.growl.css" rel="stylesheet" type="text/css" />
+
     ## render the css with the same name as this page
     ${ static_renderer.get_template_css(request, context)  }
-  
+
   </head>
   <body>
-  
-    <header>
-      Welcome to the homepage app!
-    </header>
-  
+
     <%block name="content">
       Site content goes here in sub-templates.
-    </%block>  
-  
+    </%block>
+
     ## render the JS with the same name as this page
     ${ static_renderer.get_template_js(request, context)  }
-  
+    <script src="${STATIC_URL}/homepage/media/jquery.form.js"></script>
   </body>
 </html>

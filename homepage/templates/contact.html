@@ -1,0 +1,15 @@
+<%inherit file="base.htm" />
+
+<%block name="content">
+<div class="contact_form">
+    <form id="contact_form"autocomplete="off" method="POST" action="/homepage/contact.contactForm/">
+        <h1>Contact Us!</h1>
+        <p>Say Hello! Or whatever you want!</p>
+        <div id="logo" class="icon-ic-drafts-24px"></div>
+        ${form['name']}
+        ${form['email']}
+        ${form['message']}
+        <input type="submit" id="button-blue"/>
+    </form>
+</div>
+</%block>
