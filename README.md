@@ -3,7 +3,7 @@ This is a Contact Us Starter Kit to create a contact us page for your site.
 ### Using:
 * Python
 * Django
-* Django Mako Plus
+* [Django Mako Plus](https://github.com/doconix/django-mako-plus)
 
 ### 3rd Party Help:
 * jQuery Forms
